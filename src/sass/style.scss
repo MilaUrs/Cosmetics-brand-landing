@@ -1,0 +1,22 @@
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+
+body {
+    font-family: 'Crimson Text', serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+a {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
