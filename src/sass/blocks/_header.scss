@@ -5,6 +5,10 @@
     &__logo {
         font-weight: 600;
         font-size: 1.5rem;
+        color: $main-color;
+    }
+    &__logo:hover {
+        color: $dark-color;
     }
     &__items {
         display: flex;
@@ -12,6 +16,12 @@
         font-size: 1.125rem;
         line-height: 34px;
         margin-left: 378px;
+        a {
+            color: $dark-color;
+        }
+        a:hover {
+            color: $main-color;
+        }
     }
     &__link {
         padding: 0 15px 0 15px;
@@ -25,13 +35,13 @@
     
     .fa {
         padding-top: 2px;
-        background: #c6978f;
+        background-color: $main-color;
         color: #fff;
         height: 100%;
         min-width: 20px;
         text-align: center;
     }
     .fa:hover {
-        background-color: #000;
+        background-color: $dark-color;
     }
 }

@@ -1,0 +1,20 @@
+.button {
+    width: 236px;
+    height: 60px;
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    &_main {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 28px;
+        padding: 16.5px 62.5px;
+        margin-top: 147px;
+    }
+
+}
+.button:hover {
+    background-color: $dark-color;
+}
