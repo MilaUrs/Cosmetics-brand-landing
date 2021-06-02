@@ -2,10 +2,12 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/about';
+@import 'blocks/consultation';
 
 body {
     font-family: 'Crimson Text', serif;
-    /* font-family: 'Open Sans', sans-serif; */
+    overflow-x: hidden;
 }
 
 a {
@@ -20,4 +22,44 @@ ul {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 3.125rem;
+    line-height: 138%;
+    text-transform: uppercase;
+    color: $dark-color;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: $dark-color;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    text-align: center;
+    color: $dark-color;
+}
+
+h4 {
+    font-style: 700;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    color: $dark-color;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: $dark-color;
 }

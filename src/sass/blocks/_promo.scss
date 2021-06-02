@@ -6,29 +6,18 @@
         margin-top: 141px;
         max-width: 514px;
     }
-    &__heading {
-        font-weight: 400;
-        font-size: 3.125rem;
-        line-height: 138%;
-        text-transform: uppercase;
-        color: $dark-color;
-    }
     &__subtitle {
-        font-family: 'Open Sans', sans-serif; 
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 190%;
-        color: $dark-color;
-        margin-top: 20px;
+        margin-top: 16px;
     }
     &__link {
         font-weight: 600;
         font-size: 1.25rem;
         display: inline-block;
         margin-left: 38px;
-        a {
-            color: $main-color;
-        }
+        color: $main-color;
+    }
+    &__link:hover, &__link-arrow:hover {
+        color: $dark-color;
     }
     &__link-arrow {
         display: inline-block;
@@ -38,4 +27,5 @@
         border-top: 2px solid $main-color;
         border-right: 2px solid $main-color;
     }
+
 }

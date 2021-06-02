@@ -1,0 +1,20 @@
+.about {
+    &__wrapper {
+        padding: 100px 0 100px 0;
+        display: flex;
+        max-width: 864px;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__items {
+        max-width: 188px;
+    }
+    &__title {
+        color: $main-color;
+        margin-top: 16px;
+    }
+    &__descr {
+        line-height: 146.24%;
+    }
+}
