@@ -2,15 +2,39 @@
     background-color: $secondary-color;
     &__wrapper {
         padding: 80px 0 80px 0;
-        max-width: 864px;
-        justify-content: space-between;
         text-align: center;
         margin: 0 auto;
     }
     &__descr {
         max-width: 343px;
         margin: 0 auto;
-        line-height: 190.24%;
-        margin-top: 24px;
+        line-height: 190%;
+        margin-top: 15px;
+    }
+    &__form-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 114px;
+        max-width: 864px;
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        min-width: 864px;
+        input {
+            color: $main-color;
+            width: 280px;
+            height: 60px;
+            border: 1px solid #C6978F;
+            background-color: transparent;
+            padding: 4px 20px 0 20px;
+            font-weight: 600;
+            font-size: 1.25rem;
+            outline: transparent;
+            &:-ms-input-placeholder{
+                color:greenyellow;
+            }
+        }
     }
 }

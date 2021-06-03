@@ -1,0 +1,39 @@
+.testimonials {
+    background-color: $secondary-color;
+    &__wrapper {
+        padding: 80px 0 80px 0;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1140px;
+    }
+    &__descr {
+        margin-left: 50px;
+        max-width: 487px;
+        line-height: 165%;
+        text-align: left;
+    }
+    &__caption {
+        margin-left: 50px;
+        text-transform: capitalize;
+        color: #727272;
+        text-align: left;
+        font-size: 0.875rem;
+    }
+    &__title {
+        margin-bottom: 80px;
+    }
+    &__carousel {
+        display: flex;
+    }
+    &__image {
+        max-width: 150px;
+        max-height: 100%;
+    }
+    &__carousel-wrapper {
+        display: flex;
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+        margin: 0 auto;
+    }
+}
