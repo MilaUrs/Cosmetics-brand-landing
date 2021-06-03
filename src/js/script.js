@@ -47,13 +47,13 @@ funcName(3, 5); */
 
 
 
-$(document).ready(function(){
+  $(document).ready(function(){
     $('.testimonials__carousel').slick({
-        dots: true,
         infinite: true,
-        speed: 300,
+        speed: 800,
         slidesToShow: 1,
-        adaptiveHeight: true
+        prevArrow: '<button type="button" class="slick-prev"><img src="../img/left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../img/right.svg"</button>',
+        dots: true,
     });
   });
-          
