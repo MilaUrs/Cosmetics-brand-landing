@@ -57,7 +57,33 @@
 		background-color: transparent;
 	}
 
+
 }
+
+
+.slick-dots {
+	position: absolute;
+    display: flex;
+    margin-top: 219px;
+    margin-left: 410px;
+	list-style: none;
+}
+.slick-dots button {
+    background: rgb(231, 231, 231); // цвет фона
+    border: none; // без рамки
+    border-radius: 100%; // радиус закругления
+    height: 12px; // высота точки
+    margin: 6px; // отступы между точками
+    outline: none; // убираем обводку
+}
+.slick-dots li[class="slick-active"] button {
+    background: $main-color;
+}        
+
+.slick-dots button {
+	font-size: 0;    
+}
+
 
 
 
