@@ -1,0 +1,90 @@
+.catalog {
+	&__wrapper {
+		max-width: 930px;
+		padding: 100px 0 100px 0;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__tabs {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+	&__tab {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		text-align: center;
+		color: #646363;
+		margin: 0 20px;
+		cursor: pointer;
+		transition: 0.5s all;
+		&_active {
+			color: $main-color;
+			padding-bottom: 5px;
+			border-bottom: 2px solid $main-color;
+		}
+	}
+	&__content {
+		margin-top: 90px;
+	}
+	&__item {
+		width: 300px;
+		min-height: 630px;
+		hr {
+			color: $main-color;
+			max-width: 220px;
+			margin: 0 auto;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		&-img {
+			display: block;
+			max-width: 100%;
+			height: 300px;
+			margin: 0 auto;
+		}
+		&-subtitle {
+			margin-top: 22px;
+			color: $main-color;
+			font-size: 1.375rem;
+		}
+		&-descr {
+			color: #646363;
+			max-width: 220px;
+			margin: 0 auto;
+			line-height: 170%;
+		}
+		&-link {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 1rem;
+			text-align: center;
+			color: $main-color;
+			display: block;
+			margin-top: 5px;
+			&:hover {
+				color: $dark-color;
+			}
+			&-arrow {
+				display: inline-block;
+				transform: rotate(45deg);
+				width: 7px;
+				height: 7px;
+				border-top: 1px solid $main-color;
+				border-right: 1px solid $main-color;
+				margin-left: 2px;
+    			margin-bottom: 1px;
+			}
+		}
+		&-price {
+			font-weight: 600;
+			font-size: 1.375rem;
+			text-align: center;
+			color: $dark-color;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}

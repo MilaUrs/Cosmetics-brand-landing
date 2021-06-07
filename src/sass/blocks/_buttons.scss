@@ -6,9 +6,10 @@
     border: none;
     cursor: pointer;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    outline: transparent;
     &_main {
-        font-weight: 600;
-        font-size: 1.25rem;
         line-height: 28px;
         padding: 19px 62.5px;
         margin-top: 150px;
@@ -16,14 +17,12 @@
     &_form {
         width: 280px;
         height: 60px;
-        background-color: $main-color;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 1.25rem;
-        outline: transparent;
         padding: 4px 20px 0 20px;
+    }
+    &_catalog {
+        width: 195px;
+        height: 55px;
+        padding: 15px 18px;
     }
 
 }
