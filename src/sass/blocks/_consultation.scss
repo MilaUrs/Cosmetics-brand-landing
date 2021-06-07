@@ -32,8 +32,8 @@
             font-weight: 600;
             font-size: 1.25rem;
             outline: transparent;
-            &:-ms-input-placeholder{
-                color:greenyellow;
+            &::placeholder{
+                color: $main-color;
             }
         }
     }

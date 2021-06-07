@@ -22,10 +22,10 @@
 				</a>
 				<div class="header__menu">
 					<ul class="header__items">
-						<li><a class="header__link" href="#">Catalog</a></li>
-						<li><a class="header__link" href="#">Samples</a></li>
-						<li><a class="header__link" href="#">Testimonials</a></li>
-						<li><a class="header__link" href="#">Contacts</a></li>
+						<li><a class="header__link" href="#catalog">Catalog</a></li>
+						<li><a class="header__link" href="#samples">Samples</a></li>
+						<li><a class="header__link" href="#testimonials">Testimonials</a></li>
+						<li><a class="header__link" href="#contacts">Contacts</a></li>
 					</ul>
 				</div>
 				<div class="header__social">
@@ -42,14 +42,14 @@
 					Day, night, cleansing, moisturizing - choose it yourself.
 				</h2>
 				<button class="button button_main">Request a call</button>
-				<a class="promo__link" href="#" >Go to catalog <div class="promo__link-arrow"></div></a>
+				<a class="promo__link" href="#" >Go to catalog</a>
 			</div>
 			
 		</div>
 	</section>
 
 	<!-- ABOUT -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="about__wrapper">
 			<div class="about__items">
 				<img src="img/cleaning.svg" alt="cleaning">
@@ -86,7 +86,7 @@
 
 
 	<!-- CATALOG -->
-	<div class="catalog">
+	<div class="catalog" id="catalog">
 		<div class="catalog__wrapper">
 			<h3 class="catalog__title">Product Catalog</h3>
 			<ul class="catalog__tabs">
@@ -95,25 +95,239 @@
 				<li class="catalog__tab">Combi skin</li>
 			</ul>
 
-			<div class="catalog__content">
+			<div class="catalog__content catalog__content_active">
 				<div class="catalog__item">
-					<img class="catalog__item-img" src="img/cream1.png" alt="catalog-item">
-					<h4 class="catalog__item-subtitle">Cream with aloe-vera</h4>
-					<hr>
-					<p class="catalog__item-descr">Appointment: <br> restoration, nutrition</p>
-					<a class="catalog__item-link" href="">read more<div class="catalog__item-link-arrow"></div> </a>
-					<p class="catalog__item-price">$100</p>
-					<button class="button button_catalog">Buy now</button>
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream1.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Cream with aloe-vera</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br> restoration, nutrition</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$100</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Cream with aloe-vera and emollient tropical extract that calms and soothes sensitive skin.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream2.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Hydrating Face Cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br> softening, moisturizing</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$124</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Hydrating Face Cream for softness and nourishment of the face with chamomile extract.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream3.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Anti-wrinkle Face Cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br>nutrition, smoothing</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$118</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Face cream with snail mucin for smoothness and rejuvenation of the skin.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="catalog__content"></div>
-			<div class="catalog__content"></div>
+
+
+			<div class="catalog__content">
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream3.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Chamomile face cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br> restoration, nutrition</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$99</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Cream with aloe-vera and emollient tropical extract that calms and soothes sensitive skin.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream1.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Flax-based face cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br> softening, moisturizing</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$113</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Hydrating Face Cream for softness and nourishment of the face with chamomile extract.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream2.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Lavender face cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br>nutrition, smoothing</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$120</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Face cream with snail mucin for smoothness and rejuvenation of the skin.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="catalog__content">
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream2.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Hyaluronic acid cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br> restoration, nutrition</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$105</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Cream with aloe-vera and emollient tropical extract that calms and soothes sensitive skin.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream3.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Sage face cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br> softening, moisturizing</p>
+							<a class="catalog__item-link" href="">read more</a>
+							<p class="catalog__item-price">$110</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Hydrating Face Cream for softness and nourishment of the face with chamomile extract.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__item-wrapper">
+						<div class="catalog__item-content catalog__item-content_active">
+							<img class="catalog__item-img" src="img/cream1.png" alt="catalog-item">
+							<h4 class="catalog__item-subtitle">Snail mucin face cream</h4>
+							<hr>
+							<p class="catalog__item-descr">Appointment: <br>nutrition, smoothing</p>
+							<a class="catalog__item-link" href="#">read more</a>
+							<p class="catalog__item-price">$115</p>
+							<button class="button button_catalog">Buy now</button>
+						</div>
+						<div class="catalog__item-about">
+							<div class="catalog__item-about-descr">Face cream with snail mucin for smoothness and rejuvenation of the skin.<br><br>
+								<b>Ingredients:</b><br>
+								Water, Glycerin, Aloe Barbadensis Leaf Extract, Polysorbate 20, Carbomer, Phenoxyethanol, 
+								Ethylglycerin, Disodium EDTA, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Tocopheryl Acetate, Yellow.<br><br>
+								<b>How to use:</b><br>
+								Apply generously to all areas of the skin. Gently massage into any affected areas.<br><br>
+								Size: 200 ml
+							</div>
+							<a class="catalog__item-about-back" href="">back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
 	<!-- TESTIMONIALS -->
 
-	<section class="testimonials">
+	<section class="testimonials" id="testimonials">
 		<div class="testimonials__wrapper">
 			<h3 class="testimonials__title">Testimonials</h3>
 			<div class="testimonials__carousel">

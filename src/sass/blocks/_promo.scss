@@ -15,17 +15,22 @@
         display: inline-block;
         margin-left: 38px;
         color: $main-color;
+        &::after {
+            content: '';
+            display: inline-block;
+            transform: rotate(45deg);
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid $main-color;
+            border-right: 2px solid $main-color;
+            margin-left: 3px;
+        }
     }
-    &__link:hover, &__link-arrow:hover {
+    &__link:hover {
         color: $dark-color;
     }
-    &__link-arrow {
-        display: inline-block;
-        transform: rotate(45deg);
-        width: 9px;
-        height: 9px;
-        border-top: 2px solid $main-color;
-        border-right: 2px solid $main-color;
+    &__link:hover::after  {
+        border-top: 2px solid $dark-color;
+        border-right: 2px solid $dark-color;
     }
-
 }
