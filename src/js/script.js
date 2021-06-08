@@ -74,9 +74,9 @@ funcName(3, 5); */
                 e.preventDefault();
                 $('.catalog__item-content').eq(i).toggleClass('catalog__item-content_active');
                 $('.catalog__item-about').eq(i).toggleClass('catalog__item-about_active');
-            })
+            });
         });
-    };
+    }
 
     toggleSlide('.catalog__item-link');
     toggleSlide('.catalog__item-about-back');
