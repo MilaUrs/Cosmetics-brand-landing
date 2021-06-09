@@ -8,10 +8,14 @@
 @import 'blocks/testimonials';
 @import 'blocks/samples';
 @import 'blocks/footer';
+@import 'blocks/modal';
+
+
 
 body {
     font-family: 'Crimson Text', serif;
     overflow-x: hidden;
+    min-width: 100vw;
 }
 
 a {

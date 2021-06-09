@@ -80,6 +80,21 @@ funcName(3, 5); */
 
     toggleSlide('.catalog__item-link');
     toggleSlide('.catalog__item-about-back');
+
+
+    //modal
+
+    $('[data-modal=request]').on( 'click', function() {
+        $('.overlay, #request').fadeIn();
+
+    });
+
+    $('.modal__close').on( 'click', function() {
+        $('.overlay, #request').fadeOut();
+
+    });
+
+
       
   });
 

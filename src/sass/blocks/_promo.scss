@@ -1,7 +1,7 @@
 .promo {
-    min-height: 784px;
-    padding: 35px 0 126px 0;
-    background: url(../../img/bg_img.png) center (center/cover) no-repeat;
+    min-width: 100vw;
+    padding: 35px 0 100px 0;
+    background-color: $secondary-color;
     &__wrapper {
         margin-top: 141px;
         max-width: 514px;
@@ -32,5 +32,15 @@
     &__link:hover::after  {
         border-top: 2px solid $dark-color;
         border-right: 2px solid $dark-color;
+    }
+    &__bg {
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        max-width: 100%;
+        height: 440px;
+        margin-left: 413px;
+        bottom: -45px;
     }
 }

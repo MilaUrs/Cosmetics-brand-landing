@@ -1,6 +1,6 @@
 .about {
     &__wrapper {
-        padding: 100px 0 100px 0;
+        padding: 90px 0 90px 0;
         display: flex;
         max-width: 864px;
         justify-content: space-between;
@@ -16,5 +16,13 @@
     }
     &__descr {
         line-height: 146.24%;
+    }
+    &__bg {
+        position: relative;
+    }
+    &__bg-flower {
+        position: absolute;
+        right: 0%;
+        margin-top: -210px;
     }
 }

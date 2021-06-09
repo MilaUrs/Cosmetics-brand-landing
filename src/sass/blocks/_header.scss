@@ -2,10 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    max-height: 50px;
+    margin-top: 10px;
     &__logo {
         font-weight: 600;
         font-size: 1.5rem;
         color: $main-color;
+        line-height: 50px;
     }
     &__logo:hover {
         color: $dark-color;
@@ -13,9 +16,11 @@
     &__items {
         display: flex;
         font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 34px;
+        font-size: 1.25rem;
+        line-height: 50px;
         margin-left: 378px;
+        margin-bottom: 0;
+        padding: 0;
         a {
             color: $dark-color;
         }
