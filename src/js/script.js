@@ -86,15 +86,27 @@ funcName(3, 5); */
 
     $('[data-modal=request]').on( 'click', function() {
         $('.overlay, #request').fadeIn();
-
-    });
-
-    $('.modal__close').on( 'click', function() {
-        $('.overlay, #request').fadeOut();
-
     });
 
 
+    $('[data-modal=confirm]').on( 'click', function() {
+        $('#request').hide();
+        $('#success').fadeIn();
+    });
+
+    $('.modal__close_success, .modal__close, modal__close_order').on( 'click', function() {
+        $('.overlay, #success, #request, #order').fadeOut();
+    });
+
+
+
+    $('.button_catalog').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__subtitle').text($('.catalog__item-subtitle').eq(i).text());
+            $('#order .modal__price').text($('.catalog__item-price').eq(i).text());
+            $('.overlay, #order').fadeIn();
+    });
+    });
       
   });
 

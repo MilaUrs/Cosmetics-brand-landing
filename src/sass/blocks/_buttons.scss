@@ -35,3 +35,7 @@
 .button:hover {
     background-color: $dark-color;
 }
+
+.button:active, .button:focus {
+    outline: none;
+  }

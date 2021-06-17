@@ -77,8 +77,8 @@
 			<p class="consultation__descr">Tell us about your skin and our experts will find the perfect cream for you</p>
 			<div class="consultation__form-wrapper">
 				<form class="consultation__form" action="#">
-					<input name="Customer's name" type="text" placeholder="Your name">
-					<input name="Customer's phone" type="number" placeholder="Your phone" required>
+					<input name="Customers-name" type="text" placeholder="Your name">
+					<input name="Customers-phone" type="number" placeholder="Your phone" required>
 					<button class="button button_form">Get a free consultation</button>
 				</form>
 			</div>
@@ -330,7 +330,7 @@
 						<img class="testimonials__image" src="img/customer-one.png" alt="customer-photo">
 						<div class="testimonials__text">
 							<p class="testimonials__descr">
-								&#10076;&#10076;  I had problem skin and chose aloe vera cream. Now the face looks like from an advertisement!
+								I had problem skin and chose aloe vera cream. Now the face looks like from an advertisement!
 								Clean skin and healthy tone.The smell is incredible.
 							</p>
 							<p class="testimonials__caption">Melissa Kind about  <span class="testimonials__caption-rose">Cream with aloe-vera</span></p>
@@ -339,7 +339,7 @@
 					<div class="testimonials__inner">
 						<img class="testimonials__image" src="img/customer-two.png" alt="customer-photo">
 						<div class="testimonials__text">
-							<p class="testimonials__descr">&#10076;&#10076;  I didn't even expect such a result! I have been using the cream 
+							<p class="testimonials__descr">I didn't even expect such a result! I have been using the cream 
 								for 2 months and am extremely happy. It really fulfills the declared functions: the skin is clean, pleasant to the touch."
 							</p>
 							<p class="testimonials__caption">Jess Parker about  <span class="testimonials__caption-rose">Wrinkleless Face Cream</span></p>
@@ -348,7 +348,7 @@
 					<div class="testimonials__inner">
 						<img class="testimonials__image" src="img/customer-three.png" alt="customer-photo">
 						<div class="testimonials__text">
-							<p class="testimonials__descr">&#10076;&#10076;  The best cream of my life! I bought it as a present for my mother, 
+							<p class="testimonials__descr">The best cream of my life! I bought it as a present for my mother, 
 								but I also took a package for myself. 
 								Now we use it constantly. The skin looks great!"
 							</p>
@@ -397,8 +397,8 @@
 			<p class="consultation__descr">Tell us about your skin and our experts will find the perfect cream for you</p>
 			<div class="consultation__form-wrapper">
 				<form class="consultation__form" action="#">
-					<input name="Customer's name" type="text" placeholder="Your name">
-					<input name="Customer's phone" type="number" placeholder="Your phone" required>
+					<input name="Customers-name" type="text" placeholder="Your name">
+					<input name="Customers-phone" type="number" placeholder="Your phone" required>
 					<button class="button button_form">Get a free consultation</button>
 				</form>
 			</div>
@@ -441,22 +441,52 @@
 		</div>
 	</footer>
 
+
+	<!-- MODAL -->
 	<div class="overlay">
 		<div class="modal" id="request">
 			<div class="modal__wrapper">
 					<h4 class="modal__title">Get a free consultation</h4>
 					<form class="modal__form" action="#">
-						<input name="Customer's name" type="text" placeholder="Your name">
-						<input name="Customer's phone" type="number" placeholder="Your phone" required>
-						<button class="button button_form">Request a call</button>
+						<input name="Customers-name" type="text" placeholder="Your name">
+						<input name="Customers-phone" type="number" placeholder="Your phone" required>
+						<button class="button button_form" data-modal="confirm">Request a call</button>
 					</form>
 			</div>
 			<div class="modal__close">&#10006;</div>
-		</div>
+		</div>	
+
+		<div class="modal modal_success" id="success">
+			<div class="modal__wrapper">
+					<h4 class="modal__title">Success!</h4>
+					<p class="modal__descr">Thank you for your application. Our specialist will contact you shortly</p>
+			</div>
+			<div class="modal__close modal__close_success">&#10006;</div>
+		</div>	
 
 
-		
+		<div class="modal modal_order" id="order">
+			<div class="modal__wrapper">
+					<h4 class="modal__title modal__title_order">Your order</h4>
+					<h3 class="modal__subtitle">Cream with aloe-vera</h3>
+					<div class="modal__price">Price:  $100</div>
+					<form class="modal__form" action="#">
+						<input name="Customers-name" type="text" placeholder="Your full name">
+						<input name="Customers-email" type="email" placeholder="Your email">
+						<input name="Customers-phone" type="number" placeholder="Your phone" required>
+						<textarea type="text" name="Customers-comment" placeholder="Comment on the order"></textarea>
+						<button class="button button_form">Confirm order</button>
+					</form>
+			</div>
+			<div class="modal__close modal__close_order">&#10006;</div>
+		</div>	
+
+
 	</div>
+
+
+
+
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
