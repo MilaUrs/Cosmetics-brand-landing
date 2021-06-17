@@ -29,6 +29,9 @@
         &_order {
             bottom: 730px;
         }
+        &_free {
+            bottom: 730px; 
+        }
     }
     &__wrapper {
         padding-top: 50px;
@@ -64,8 +67,7 @@
         }
         input {
             margin-bottom: 15px;
-            color: $main-color;
-            width: 280px;
+             width: 280px;
             height: 60px;
             border: 1px solid #C6978F;
             background-color: transparent;
@@ -96,6 +98,10 @@
             text-align: center;
         }
     }
+    &_free {
+        top: calc(50% - 377px);
+        min-height: 755px;
+    }
     &__subtitle {
         font-size: 1.5rem;
         color: $main-color;
@@ -111,6 +117,6 @@
     }
 }
 
-#request, #success, #order {
+#request, #success, #order, #free {
     display: none;
 }

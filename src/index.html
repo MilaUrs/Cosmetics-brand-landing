@@ -469,19 +469,34 @@
 			<div class="modal__wrapper">
 					<h4 class="modal__title modal__title_order">Your order</h4>
 					<h3 class="modal__subtitle">Cream with aloe-vera</h3>
-					<div class="modal__price">Price:  $100</div>
+					<div class="modal__price">Total:  $100</div>
 					<form class="modal__form" action="#">
-						<input name="Customers-name" type="text" placeholder="Your full name">
+						<input name="Customers-name" type="text" placeholder="Your full name" minlength="3">
 						<input name="Customers-email" type="email" placeholder="Your email">
 						<input name="Customers-phone" type="number" placeholder="Your phone" required>
-						<textarea type="text" name="Customers-comment" placeholder="Comment on the order"></textarea>
+						<textarea type="text" name="Customers-comment" placeholder="Add order comments"></textarea>
 						<button class="button button_form">Confirm order</button>
 					</form>
 			</div>
 			<div class="modal__close modal__close_order">&#10006;</div>
 		</div>	
 
-
+		
+		<div class="modal modal_free" id="free">
+			<div class="modal__wrapper">
+					<h4 class="modal__title modal__title_order">Your order</h4>
+					<h3 class="modal__subtitle">Cream with aloe-vera</h3>
+					<div class="modal__price">Total:  $0</div>
+					<form class="modal__form" action="#">
+						<input name="Customers-name" type="text" placeholder="Your full name">
+						<input name="Customers-email" type="email" placeholder="Your email">
+						<input name="Customers-phone" type="number" placeholder="Your phone" required>
+						<textarea type="text" name="Customers-comment" placeholder="Add order comments"></textarea>
+						<button class="button button_form">Confirm order</button>
+					</form>
+			</div>
+			<div class="modal__close modal__close_free">&#10006;</div>
+		</div>	
 	</div>
 
 
@@ -492,7 +507,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js" ></script>
-
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
