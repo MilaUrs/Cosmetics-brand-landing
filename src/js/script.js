@@ -50,13 +50,12 @@ funcName(3, 5); */
   $(document).ready(function(){
     $('.testimonials__carousel').slick({
         infinite: true,
-        speed: 800,
+        speed: 200,
+        fade: true,
         slidesToShow: 1,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/right.svg"</button>',
-        dots: true,
-        dotsClass: 'slick-dots',
-
+        adaptiveHeight: true
     });
 
 
@@ -115,8 +114,7 @@ funcName(3, 5); */
     });
     });
 
-    $('.consultation__form').validate();
-      
-  });
 
+
+  });
 

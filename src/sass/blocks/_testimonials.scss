@@ -1,41 +1,39 @@
-.testimonials {
+
+ .testimonials {
 	background-color: $secondary-color;
 	&__wrapper {
 		padding-top: 80px;
+		padding-bottom: 80px;
 		margin: 0 auto;
 		max-width: 930px;
-		min-height: 530px;
+		min-height: 600px;
 	}
 	&__title {
-		margin-bottom: 80px;
+		margin-bottom: 73px;
 	}
 	&__image {
-		max-width: 150px;
-		max-height: 150px;
+		max-width: 120px;
+		max-height: 120px;
+		margin: 0 auto;
+		margin-bottom: 45px;
 	}
 	&__text {
-		display: block;
-		position: relative;
-		max-width: 488px;
-		margin-left: 50px;
-		flex-direction: column;
-		align-content: space-between;
+		max-width: 500px;
+		margin: 0 auto;
+		text-align: center;
 	}
 	&__descr {
 		min-width: 100%;
-		text-align: left;
+		text-align: center;
+		line-height: 170%;
 	}
 	&__caption {
 		min-width: 100%;
-		text-align: left;
+		text-align: center;
 		font-size: 1rem;
-		color: #575757;
+		color: $main-color;
 		text-transform: capitalize;
 		margin-top: 55px;
-	}
-	&__caption-rose {
-		font-style: italic;
-		color: $main-color;
 	}
 	&__carousel {
 		display: flex;
@@ -44,52 +42,12 @@
 	&__inner {
 		display: block;
 		margin: 0 auto;
-		padding-left: 110px;
 	}
-
-	.slick-initialized .slick-slide {
-		display: flex;
-	}
-
-	
 	.slick-prev, .slick-next {
 		outline: none;
 		border: none;
 		background-color: transparent;
 	}
-
-
 }
-
-
-.slick-dots {
-	position: absolute;
-    display: flex;
-    margin-top: 219px;
-    margin-left: 410px;
-	list-style: none;
-	margin-bottom: 80px;
-}
-.slick-dots button {
-    background: rgb(231, 231, 231); // цвет фона
-    border: none; // без рамки
-    border-radius: 100%; // радиус закругления
-    height: 12px; // высота точки
-    margin: 6px; // отступы между точками
-    outline: none; // убираем обводку
-}
-.slick-dots li[class="slick-active"] button {
-    background: $main-color;
-}        
-
-.slick-dots button {
-	font-size: 0;    
-}
-
-
-.testimonials__inner tns-item {
-	display: flex;
-}
-
 
 

@@ -6,7 +6,7 @@
 		margin: 0 auto;
 	}
 	&__tabs {
-		margin-top: 30px;
+		margin-top: 45px;
 		display: flex;
 		justify-content: center;
 		padding: 0;
@@ -28,7 +28,7 @@
 	&__content {
 		display: none;
 		&_active {
-			margin-top: 80px;
+			margin-top: 70px;
 			display: flex;
 			justify-content: space-between;
 		}
