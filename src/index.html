@@ -14,7 +14,7 @@
 </head>
 <body>
 	<!-- PROMO -->
-	<section class="promo">
+	<section class="promo" id="up">
 		<div class="container">
 			<header class="header">
 				<a class="header__logo" href="#">
@@ -76,10 +76,10 @@
 			<h3 class="consultation__title">Get a free consultation</h3>
 			<p class="consultation__descr">Tell us about your skin and our experts will find the perfect cream for you</p>
 			<div class="consultation__form-wrapper">
-				<form class="consultation__form" action="#">
+				<form class="consultation__form" method="POST" action="#" id="form">
 					<input name="name" type="text" placeholder="Your name" required>
 					<input name="phone" type="tel" placeholder="Your phone" required>
-					<button class="button button_form">Get a free consultation</button>
+					<button class="button button_submit">Get a free consultation</button>
 				</form>
 			</div>
 		</div>
@@ -361,7 +361,9 @@
 
 	<!-- SAMPLES -->
 	<section class="samples" id="samples">
-		<img class="samples__bg-flower" src="img/right-flower2.png" alt="flower">
+		<div class="samples__bg" >
+			<img class="samples__bg-flower" src="img/right-flower2.png" alt="flower">
+		</div>
 		<div class="samples__wrapper">
 			<h3 class="samples__title">Try the cream for free</h3>
 			<p class="samples__descr">Choose a free sample and then order a large volume.</p>
@@ -396,10 +398,10 @@
 			<h3 class="consultation__title">Get a free consultation</h3>
 			<p class="consultation__descr">Tell us about your skin and our experts will find the perfect cream for you</p>
 			<div class="consultation__form-wrapper">
-				<form class="consultation__form" action="#">
+				<form class="consultation__form" method="POST" action="#" id="form">
 					<input name="name" type="text" placeholder="Your name" required>
 					<input name="phone" type="tel" placeholder="Your phone" required>
-					<button class="button button_form">Get a free consultation</button>
+					<button class="button button_submit">Get a free consultation</button>
 				</form>
 			</div>
 		</div>
@@ -447,10 +449,10 @@
 		<div class="modal" id="request">
 			<div class="modal__wrapper">
 					<h4 class="modal__title">Get a free consultation</h4>
-					<form class="modal__form" action="#">
+					<form class="modal__form" method="post" action="#" id="form">
 						<input name="name" type="text" placeholder="Your name" required>
 						<input name="phone" type="tel" placeholder="Your phone" required>
-						<button class="button button_form" data-modal="confirm">Request a call</button>
+						<button class="button button_submit" data-modal="confirm">Request a call</button>
 					</form>
 			</div>
 			<div class="modal__close">&#10006;</div>
@@ -470,12 +472,12 @@
 					<h4 class="modal__title modal__title_order">Your order</h4>
 					<h3 class="modal__subtitle">Cream with aloe-vera</h3>
 					<div class="modal__price">Total:  $100</div>
-					<form class="modal__form" action="#">
+					<form class="modal__form" method="POST" action="#" id="form">
 						<input name="name" type="text" placeholder="Your full name" minlength="3" required>
 						<input name="email" type="email" placeholder="Your email" required>
 						<input name="phone" placeholder="Your phone" required>
 						<textarea type="text" name="comment" placeholder="Add order comments"></textarea>
-						<button class="button button_form">Confirm order</button>
+						<button class="button button_submit">Confirm order</button>
 					</form>
 			</div>
 			<div class="modal__close modal__close_order">&#10006;</div>
@@ -487,19 +489,21 @@
 					<h4 class="modal__title modal__title_order">Your order</h4>
 					<h3 class="modal__subtitle">Cream with aloe-vera</h3>
 					<div class="modal__price">Total:  $0</div>
-					<form class="modal__form" action="#">
+					<form class="modal__form" method="POST" action="#" id="form">
 						<input name="name" type="text" placeholder="Your full name" required>
 						<input name="email" type="email" placeholder="Your email" required>
 						<input name="phone" type="tel" placeholder="Your phone" required>
 						<textarea type="text" name="comment" placeholder="Add order comments"></textarea>
-						<button class="button button_form">Confirm order</button>
+						<button class="button button_submit">Confirm order</button>
 					</form>
 			</div>
 			<div class="modal__close modal__close_free">&#10006;</div>
 		</div>	
 	</div>
 
-
+    <!-- PAGE UP -->
+	<a class="up" href="#up"><img src="img/up.svg" alt="up"></a>
+	
 
 
 

@@ -1,51 +1,3 @@
-/* let answer = confirm("Do you have 18 years old?");
-console.log(answer); */
-
-
-
-/* if (2*4 == 8*2) {
-	console.log('Yes')
-} else {
-	console.log('No');
-} */
-
-
-
-/* let answer = prompt("Are you Mila?")
-if (answer =='yes') {
-	console.log('Welcome');
-} else {
-	console.log('Go away!');
-} */
-
-
-/* 
-const num = 52;
-if (num < 49) {
-	console.log("Wrong");
-} else if (num > 51) {
-	console.log("Wrong, sorry");
-} else {
-	console.log('Coool, you win!');
-} */
-
-
-
-// ЦИКЛЫ->
-
-/* for (let i = 1; i < 8; i++) {
-	console.log(i);
-} */
-
-
-//ФУНКЦИИ 
-
-/* function funcName(a, b) {
-	console.log(a+b)
-}
-funcName(3, 5); */
-
-
 
   $(document).ready(function(){
 	$('.testimonials__carousel').slick({
@@ -85,17 +37,12 @@ funcName(3, 5); */
 
 	$('[data-modal=request]').on( 'click', function() {
 		$('.overlay, #request').fadeIn();
-	});
+	});    //open modal window Request call (main block-promo)
 
-
-	$('[data-modal=confirm]').on( 'click', function() {
-		$('#request').hide();
-		$('#success').fadeIn();
-	});
 
 	$('.modal__close_success, .modal__close, modal__close_order, modal__close_free').on( 'click', function() {
-		$('.overlay, #success, #request, #order').fadeOut();
-	});
+		$('.overlay, #success, #request, #order, #free').fadeOut();
+	});  //close all modal windows
 
 
 
@@ -105,31 +52,44 @@ funcName(3, 5); */
 			$('#order .modal__price').text($('.catalog__item-price').eq(i).text());
 			$('.overlay, #order').fadeIn();
 	});
-	});
+	});  //open order window by clicking button BUY NOW (also choose currenntly price of each cream)
+
+
 
 	$('.button_samples').each(function(i) {
 		$(this).on('click', function() {
 			$('#free .modal__subtitle').text($('.samples__item-subtitle').eq(i).text());
 			$('.overlay, #free').fadeIn();
 	});
-	});
+	});  //open samples(free cream) window by clicking button GET IT FOR FREE (also choose currenntly price of each cream)
 
 
 	//SEND MAIL
-	$('form').submit(function(e) {
-		e.preventDefault();
-		$.ajax({
-			type: "POST",
-			url: "mailer/smart.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
+    $('#form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find('input').val("");
+            $('#request, #order, #free').fadeOut( "fast" );  //close currently window and open SUCCESS window by sending mail
+            $('.overlay, #success').fadeIn( "fast" );
+
+            $('#form').trigger('reset');
+        });
+        return false;
+    });
 
 
-			$('form').trigger('reset');
-		});
-		return false;
-	});
+	// PAGE UP
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 2600) {
+            $('.up').fadeIn();
+        } else {
+            $('.up').fadeOut();
+        }
+    });
 
   });
 

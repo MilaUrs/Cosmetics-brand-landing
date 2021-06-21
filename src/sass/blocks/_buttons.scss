@@ -9,12 +9,13 @@
     font-weight: 600;
     font-size: 1.25rem;
     outline: transparent;
+    padding-top: 4px;
     &_main {
         line-height: 28px;
         padding: 19px 62.5px;
         margin-top: 150px;
     }
-    &_form {
+    &_submit {
         width: 280px;
         height: 60px;
         padding: 4px 20px 0 20px;
