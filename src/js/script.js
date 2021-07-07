@@ -84,7 +84,7 @@
 
 	// PAGE UP
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 2600) {
+        if ($(this).scrollTop() > 3000) {
             $('.up').fadeIn();
         } else {
             $('.up').fadeOut();

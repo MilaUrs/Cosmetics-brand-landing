@@ -12,10 +12,13 @@
 @import 'blocks/up';
 
 
+html, body {
+    overflow-x: hidden;
+}
+
 
 body {
     font-family: 'Crimson Text', serif;
-    overflow-x: hidden;
     min-width: 100vw;
 }
 
@@ -80,7 +83,6 @@ p {
 @media (max-width: 1024px) {
     //header
     .container {
-        overflow-x: hidden;
         max-width: 1024px;
         padding: 0 30px 0 30px;
     }
@@ -137,7 +139,6 @@ p {
 
 @media (max-width: 768px) {
     .container {
-        overflow-x: hidden;
         max-width: 768px;
         padding: 0 20px 0 20px;
     }
@@ -227,14 +228,13 @@ p {
         margin-top: 20px;
     }
     .modal {
-        left: calc(50% - 392px);
+        left: calc(50% - 227px);
     }
 }
 
 
 @media (max-width: 425px) {
     .container {
-        overflow-x: hidden;
         max-width: 425px;
     }
     .promo__img {
@@ -279,5 +279,195 @@ p {
     }
     .footer__item {
         margin-top: 40px;
+    }
+    .modal {
+        width: 405px;
+        left: calc(50% - 203px);
+    }
+    .modal__close {
+        right: 7px;
+        color: $main-color;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .promo {
+        max-width: 375px
+    }
+    .container {
+        max-width: 375px;
+    }
+    .header {
+        max-width: 100%;
+    }
+    .header__social {
+        display: none;
+    }
+    .promo__link {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .button_main {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-top: 263px;
+    }
+    .promo__img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .promo__bg {
+        margin-top: -40px;
+    }
+    .up {
+        right: 21px;
+    }
+    .modal {
+        width: 335px;
+        left: calc(50% - 168px);
+    }
+
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+    .header {
+        max-width: 100%;
+    }
+    .header__social {
+        display: none;
+    }
+    .promo__wrapper {
+        margin-top: 65px;
+    }
+    h1 {
+        font-size: 1.875rem;
+        max-width: 93%;
+    }
+    .promo__subtitle {
+        max-width: 100%;
+        font-size: 0.875rem;
+    }
+    .promo__img {
+        position: absolute;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 27px;
+        margin-left: -70px;
+    }
+    .promo__bg {
+        width: 320px;
+    }
+    .promo {
+        max-width: 320px;
+        padding: 20px 0 50px 0;
+    }
+    .about__bg-flower {
+        max-height: 248px;
+        margin-top: -102px;
+    }
+    .consultation__descr {
+        max-width: 305px;
+    }
+    .catalog__bg-flower {
+        max-height: 227px;
+        margin-top: -72px
+    }
+    .catalog__tab {
+        font-size: 0.875rem;
+    }
+    .testimonials__descr {
+        font-size: 0.875rem;
+    }
+    .testimonials__text {
+        max-width: 240px;
+    }
+    .testimonials__caption {
+        margin-top: 20px;
+    }
+    .slick-prev img, .slick-next img {
+        height: 18px;
+    }
+    .testimonials__image {
+        margin-bottom: 31px;
+    }
+    .testimonials__wrapper {
+        padding-top: 65px;
+    }
+    .testimonials__title  {
+        margin-bottom: 60px;
+    }
+    .samples__bg-flower {
+        max-height: 206px;
+        margin-top: -93px;
+    }
+    .testimonials {
+        height: 560px;
+    }
+    .samples__wrapper {
+        padding: 65px 0 35px 0;
+    }
+    .consultation__bg-flower {
+        margin-top: -122px;
+        max-height: 252px;
+    }
+    .consultation__wrapper {
+        padding: 70px 0 80px 0;
+    }
+    .footer__wrapper {
+        max-width: 280px;
+        padding: 24px 0 80px 0;
+    }
+    .footer__social {
+        transform: translateX(calc(-50% + 138px));
+        margin-top: 374px;
+    }
+
+
+
+    .modal {
+        left: calc(50% - 159px);
+        width: 300px;
+    }
+    .modal__close {
+        right: 4px;
+        color: $main-color;
+        font-size: 17px;
+    }
+    .modal__form input {
+        margin-bottom: 10px;
+        height: 50px;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    .button_submit {
+        max-width: 280px;
+    }
+    .modal__form {
+        max-width: 100%;
+    }
+    .modal__wrapper {
+        width: 280px;
+        margin: 0 auto;
+    }
+    .modal__title_order {
+        margin-bottom: 10px;
+    }
+    .modal__price {
+        margin-top: 13px;
+    }
+    .modal__form textarea {
+        font-size: 1rem;
+        height: 100px;
+    }
+    .modal_order {
+        max-height: 500px;
     }
 }
