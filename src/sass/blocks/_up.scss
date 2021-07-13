@@ -1,11 +1,19 @@
 .up {
-    display: none;
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    img {
-        width: 100%;
+    position: relative;
+    &__inner {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        right: 40px;
+        bottom: 20px;
+        img {
+            width: 100%;
+        }
     }
 }
+
+
+
+

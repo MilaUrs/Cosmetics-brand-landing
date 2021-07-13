@@ -13,7 +13,7 @@
     position: absolute;
     background-color: #fff;
     width: 440px;
-    min-height: 400px;
+    height: 400px;
     box-shadow: 0px 10px 31px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
     &__close {
@@ -63,11 +63,22 @@
             &::placeholder {
                 outline: none;
                 color: $main-color; 
+                border-color: $main-color;
+            }
+            &::-ms-input-placeholder {
+                outline: none;
+                color: $main-color; 
+                border-color: $main-color;
+            }
+            &:-moz-placeholder {
+                outline: none;
+                color: $main-color; 
+                border-color: $main-color;
             }
         }
         input {
             margin-bottom: 15px;
-             width: 280px;
+            width: 280px;
             height: 60px;
             border: 1px solid #C6978F;
             background-color: transparent;
@@ -86,11 +97,11 @@
         font-size: 1.125rem;
     }
     &_success {
-        min-height: 250px;
+        height: 250px;
     }
     &_order {
         top: calc(50% - 377px);
-        min-height: 755px;
+        height: 755px;
         &-descr {
             font-size: 1rem;
             max-width: 205px;
@@ -100,7 +111,7 @@
     }
     &_free {
         top: calc(50% - 377px);
-        min-height: 755px;
+        height: 755px;
     }
     &__subtitle {
         font-size: 1.5rem;
